@@ -1,1 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap'); :root { --primary-green: #78BE20; --bg-dark: #1a1a1a; --text-light: #ffffff; --text-gray: #e0e0e0; --glass: rgba(255, 255, 255, 0.05); } * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: 'Open Sans', sans-serif; background-color: #f4f4f4; color: #333; line-height: 1.6; } h1, h2, h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; } header { position: fixed; top: 0; width: 100%; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; background: rgba(26, 26, 26, 0.8); backdrop-filter: blur(10px); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); } .hero { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg') center/cover; color: var(--text-light); text-align: center; padding: 20px; } .btn-cta { background: var(--primary-green); color: #fff; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: transform 0.3s ease; display: inline-block; margin-top: 20px; } .btn-cta:hover { transform: scale(1.05); } .card { background: var(--glass); backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 20px; transition: 0.3s; } .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); } .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 15px; border-radius: 50%; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 999; } @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .header { padding: 1rem; } }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --green-herbalife: #78BE20;
+    --white: #FFFFFF;
+    --dark-gray: #2D2D2D;
+    --light-bg: #F8F9FA;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    line-height: 1.6;
+    padding-top: 50px; /* Espaço para o header fixo */
+}
+
+h1, h2, h3 { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+
+/* Header Fixo */
+.whatsapp-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: var(--green-herbalife);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Botão Flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+.card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    margin: 25px 0;
+    text-align: center;
+}
+
+.section-gradient {
+    background: linear-gradient(180deg, #FFFFFF 0%, #f4f9ed 100%);
+    padding: 50px 0;
+}
+
+.img-fluid { width: 100%; height: auto; border-radius: 15px; margin-bottom: 20px; }
+
+.selos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.selo-mini {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.selo-mini:hover { transform: translateY(-5px); border-color: var(--green-herbalife); }
+
+.cta-button {
+    background: var(--green-herbalife);
+    color: white;
+    border-radius: 50px;
+    padding: 18px 40px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.cta-button:hover { background: #65a318; transform: scale(1.05); }
+
+footer { text-align: center; padding: 40px; font-size: 0.85rem; color: #888; border-top: 1px solid #eee; }
