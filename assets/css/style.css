@@ -310,3 +310,12 @@ footer p {
 .lightbox-overlay .close-lightbox {
     position: absolute;
     top:
+/* ===== Lightbox — compatibilidade com CSS inline ===== */
+#lightbox .close-btn {
+    cursor: pointer;
+    line-height: 1;
+    user-select: none;
+}
+#lightbox .close-btn:hover {
+    opacity: 0.7;
+}
