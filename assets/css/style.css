@@ -78,6 +78,9 @@ h1, h2, h3 {
 /* ═══════════════════════════════════════
    TOPBAR PADRÃO — HERBALIFE (REVISADA)
    ═══════════════════════════════════════ */
+/* ═══════════════════════════════════════
+   TOPBAR PADRÃO — HERBALIFE (REVISADA)
+   ═══════════════════════════════════════ */
 
 /* ── TOPBAR FIXA ── */
 .sticky-header {
@@ -95,7 +98,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    height: 56px;
+    min-height: 56px;        /* era height: 56px → impedia o logo crescer */
 }
 
 /* ── BRAND (Logo + Texto) ── */
@@ -108,8 +111,9 @@ h1, h2, h3 {
 }
 
 .sticky-header .topbar-logo {
-    height: 128px;
+    height: 180px;            /* era 128px → aumentado */
     width: auto;
+    max-height: 180px;        /* garante que não estoure */
 }
 
 .sticky-header .topbar-nome {
@@ -182,7 +186,6 @@ h1, h2, h3 {
     color: #78BE20;
 }
 
-/* Dropdown abre no hover (desktop) ou toque (mobile via focus-within) */
 .menu-dropdown:focus-within .menu-lista,
 .menu-dropdown:hover .menu-lista {
     display: block;
@@ -208,18 +211,18 @@ h1, h2, h3 {
 
 /* ── ESPAÇADOR ── */
 .header-spacer {
-    height: 56px;
+    min-height: 56px;
 }
 
-/* ── MOBILE ── */
 /* ── MOBILE ── */
 @media (max-width: 600px) {
     .sticky-header {
         padding: 6px 3%;
-        height: auto;
+        min-height: auto;
     }
     .sticky-header .topbar-logo {
-        height: 80px;
+        height: 110px;
+        max-height: 110px;
     }
     .sticky-header .topbar-nome {
         display: none;
@@ -233,11 +236,9 @@ h1, h2, h3 {
         padding: 6px 10px;
     }
     .header-spacer {
-        height: 68px;
+        min-height: 60px;
     }
 }
-
-
 
 /* ── BOTÃO WHATSAPP ── */
 .sticky-header .btn-cta {
