@@ -283,3 +283,41 @@ footer p {
     box-shadow: 0 12px 22px rgba(37, 211, 102, 0.40);
 }
 
+/* ===== Lightbox CSS Puro ===== */
+.selos-carrossel a {
+    display: inline-block;
+    flex: 0 0 auto;
+}
+.selos-carrossel a img {
+    height: 90px;
+    width: auto;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+.selos-carrossel a:hover img {
+    transform: scale(1.05);
+}
+/* Overlay — invisível até ser ativado */
+.lightbox-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.88);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+.lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.lightbox-overlay .close-lightbox {
+    position: absolute;
+    top:
