@@ -76,14 +76,8 @@ h1, h2, h3 {
 }
 
 /* ═══════════════════════════════════════
-   TOPBAR PADRÃO — HERBALIFE
+   TOPBAR PADRÃO — HERBALIFE (REVISADA)
    ═══════════════════════════════════════ */
-
-:root {
-    --hb-green: #78BE20;
-    --hb-dark: #1a1a1a;
-    --whatsapp: #25D366;
-}
 
 /* ── TOPBAR FIXA ── */
 .sticky-header {
@@ -96,15 +90,15 @@ h1, h2, h3 {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(120, 190, 32, 0.25);
-    padding: 8px 14px;
+    padding: 8px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    height: 56px;
 }
 
-
-/* ── LOGO + TEXTO ── */
+/* ── BRAND (Logo + Texto) ── */
 .sticky-header .topbar-brand {
     display: flex;
     align-items: center;
@@ -114,7 +108,7 @@ h1, h2, h3 {
 }
 
 .sticky-header .topbar-logo {
-    height: 128px;
+    height: 40px;
     width: auto;
 }
 
@@ -127,27 +121,26 @@ h1, h2, h3 {
     white-space: nowrap;
 }
 
-
 /* ── MENU DROPDOWN ── */
 .menu-dropdown {
     position: relative;
 }
 
 .menu-toggle {
-    background: var(--hb-green);
-    color: #fff;
+    background: none;
     border: none;
-    padding: 7px 16px;
-    border-radius: 6px;
-    font-size: 0.82rem;
-    font-weight: 700;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
+    padding: 10px 14px;
+    transition: color 0.3s ease;
 }
 .menu-toggle:hover {
-    background: #5a9e10;
+    color: #78BE20;
 }
 
 .menu-lista {
@@ -161,10 +154,11 @@ h1, h2, h3 {
     border: 1px solid rgba(120, 190, 32, 0.3);
     border-radius: 8px;
     list-style: none;
-    min-width: 180px;
+    min-width: 190px;
     z-index: 1001;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    padding: 0;
 }
 
 .menu-lista li {
@@ -188,11 +182,60 @@ h1, h2, h3 {
     color: #78BE20;
 }
 
-/* Exibe menu no hover ou foco (mobile: toque) */
+/* Dropdown abre no hover (desktop) ou toque (mobile via focus-within) */
 .menu-dropdown:focus-within .menu-lista,
 .menu-dropdown:hover .menu-lista {
     display: block;
 }
+
+/* ── BOTÃO WHATSAPP ── */
+.sticky-header .btn-cta {
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 50px;
+    white-space: nowrap;
+    box-shadow: 0 2px 10px rgba(37, 211, 102, 0.3);
+    flex-shrink: 0;
+}
+.sticky-header .btn-cta:hover {
+    background: #1fb950;
+}
+
+/* ── ESPAÇADOR ── */
+.header-spacer {
+    height: 56px;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+    .sticky-header {
+        padding: 6px 3%;
+        height: 52px;
+    }
+    .sticky-header .topbar-logo {
+        height: 32px;
+    }
+    .sticky-header .topbar-nome {
+        display: none;
+    }
+    .menu-toggle {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+    .sticky-header .btn-cta {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+    }
+    .header-spacer {
+        height: 52px;
+    }
+}
+
 
 /* ── BOTÃO WHATSAPP ── */
 .sticky-header .btn-cta {
