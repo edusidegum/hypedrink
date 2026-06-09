@@ -38,7 +38,6 @@ h1, h2, h3 {
 }
 
 /* ===== HEADER STICKY ===== */
-/* ===== HEADER STICKY ===== */
 .sticky-header {
     position: fixed;
     top: 0;
@@ -75,6 +74,131 @@ h1, h2, h3 {
     margin: 0 auto;
     padding: 30px 20px;
 }
+
+/* ═══════════════════════════════════════
+   TOPBAR PADRÃO — HERBALIFE
+   ═══════════════════════════════════════ */
+
+:root {
+    --hb-green: #78BE20;
+    --hb-dark: #1a1a1a;
+    --whatsapp: #25D366;
+}
+
+/* ── TOPBAR FIXA ── */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(26, 26, 26, 0.96);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(120, 190, 32, 0.25);
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+/* ── LOGO ── */
+.sticky-header .topbar-logo {
+    height: 32px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* ── MENU DROPDOWN ── */
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-toggle {
+    background: var(--hb-green);
+    color: #fff;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+.menu-toggle:hover {
+    background: #5a9e10;
+}
+
+.menu-lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6px;
+    background: #1e1e1e;
+    border: 1px solid rgba(120, 190, 32, 0.3);
+    border-radius: 8px;
+    list-style: none;
+    min-width: 180px;
+    z-index: 1001;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.menu-lista li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.menu-lista li:last-child {
+    border-bottom: none;
+}
+
+.menu-lista a {
+    display: block;
+    padding: 11px 16px;
+    color: #d6d6d6;
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+}
+.menu-lista a:hover {
+    background: rgba(120, 190, 32, 0.12);
+    color: #78BE20;
+}
+
+/* Exibe menu no hover ou foco (mobile: toque) */
+.menu-dropdown:focus-within .menu-lista,
+.menu-dropdown:hover .menu-lista {
+    display: block;
+}
+
+/* ── BOTÃO WHATSAPP ── */
+.sticky-header .btn-cta {
+    background: var(--whatsapp);
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 50px;
+    white-space: nowrap;
+    box-shadow: 0 2px 10px rgba(37, 211, 102, 0.3);
+    letter-spacing: 0.3px;
+}
+.sticky-header .btn-cta:hover {
+    background: #1fb950;
+}
+
+/* ── ESPAÇADOR ── */
+.header-spacer {
+    height: 52px;
+}
+
 
 /* ===== SEPARADORES ===== */
 .separator-1 {
