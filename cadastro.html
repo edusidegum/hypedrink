@@ -1,14 +1,28 @@
-<body class="background-fixed">
-    <main class="container">
-        <div class="cadastro-box" style="background: rgba(255,255,255,0.9);">
-            <!-- YouTube centralizado -->
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/grVp3WsJunA" allowfullscreen></iframe>
-            </div>
-            
-            <!-- QR Code com extensão .png corrigida -->
-            <img src="img/qrcodeedusidegum.png" alt="Scan QR Code Edu" style="max-width: 200px;">
-            ...
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body { margin:0; padding:0; }
+        .background-parallax {
+            background-image: url('img/novoconsultor.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="background-parallax">
+    <div class="container" style="background: rgba(255,255,255,0.95); border-radius:20px; padding:30px;">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/grVp3WsJunA" allowfullscreen></iframe>
         </div>
-    </main>
+        <img src="img/qrcodeedusidegum.png" alt="QR Code" style="width:200px; display:block; margin:auto;">
+        <a href="https://wa.me/5551999663200?text=Quero%20Ser%20um%20Consultor%20Herbalife,%20como%20faço%20?" class="btn-primary-whats" style="margin-top:20px;">QUERO SER UM DISTRIBUIDOR</a>
+    </div>
 </body>
+</html>
