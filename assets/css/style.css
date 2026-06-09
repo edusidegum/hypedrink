@@ -113,9 +113,9 @@ h1, h2, h3 {
 }
 
 .sticky-header .topbar-logo {
-    height: 180px;
+    height: 128px;
     width: auto;
-    max-height: 180px;
+    max-height: 128px;
 }
 
 .sticky-header .topbar-nome {
@@ -217,7 +217,7 @@ h1, h2, h3 {
 
 /* ── ESPAÇADOR ── */
 .header-spacer {
-    min-height: 56px;
+    min-height: 40px;
 }
 
 /* ── MOBILE ── */
