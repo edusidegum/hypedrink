@@ -50,32 +50,36 @@
         }
         .header-spacer { height: 56px; }
 
-        /* Lightbox (crítico para UX, inline evita flash) */
-        #lightbox {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.9);
-            z-index: 99999;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-        #lightbox img {
-            max-width: 90vw;
-            max-height: 85vh;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-        }
-        #lightbox .close-btn {
-            position: absolute;
-            top: 20px; right: 30px;
-            color: #fff;
-            font-size: 40px;
-            font-weight: bold;
-            z-index: 100000;
-        }
+    <!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagem ampliada" onclick="closeLightbox()">
+    <span onclick="closeLightbox()" style="position:absolute;top:20px;right:30px;color:#fff;font-size:40px;font-weight:bold;cursor:pointer;z-index:100000;line-height:1;" aria-label="Fechar imagem">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagem ampliada" style="max-width:90vw;max-height:85vh;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+</div>
+
+<script>
+    var lightboxTimer = null;
+
+    function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        // Fecha automaticamente após 5 segundos
+        clearTimeout(lightboxTimer);
+        lightboxTimer = setTimeout(closeLightbox, 5000);
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = '';
+        clearTimeout(lightboxTimer);
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLightbox();
+    });
+</script>
+   
+        
     </style>
 </head>
 <body>
@@ -121,19 +125,19 @@
             <!-- Carrossel com lightbox — cada miniatura aciona o lightbox via onclick -->
             <div class="selos-carrossel" role="list" aria-label="Galeria de certificados e selos de excelência">
                 <img src="img/selos/selo1.jpg"  alt="Certificado 1"  role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo2.jpg"  alt="Certificado 2"  role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo3.jpg"  alt="Certificado 3"  role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo12.jpg"  alt="Certificado 2"  role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo123.jpg"  alt="Certificado 3"  role="listitem" onclick="openLightbox(this.src)">
                 <img src="img/selos/selo4.jpg"  alt="Certificado 4"  role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo5.jpg"  alt="Certificado 5"  role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo6.jpg"  alt="Certificado 6"  role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo45.jpg"  alt="Certificado 5"  role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo456.jpg"  alt="Certificado 6"  role="listitem" onclick="openLightbox(this.src)">
                 <img src="img/selos/selo7.jpg"  alt="Certificado 7"  role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo8.jpg"  alt="Certificado 8"  role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo9.jpg"  alt="Certificado 9"  role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo10.jpg" alt="Certificado 10" role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo11.jpg" alt="Certificado 11" role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo12.jpg" alt="Certificado 12" role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo13.jpg" alt="Certificado 13" role="listitem" onclick="openLightbox(this.src)">
-                <img src="img/selos/selo14.jpg" alt="Certificado 14" role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo7.jpg"  alt="Certificado 8"  role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo789.jpg"  alt="Certificado 9"  role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo9.jpg" alt="Certificado 10" role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo91.jpg" alt="Certificado 11" role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo911.jpg" alt="Certificado 12" role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo913.jpg" alt="Certificado 13" role="listitem" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo914.jpg" alt="Certificado 14" role="listitem" onclick="openLightbox(this.src)">
             </div>
         </section>
 
