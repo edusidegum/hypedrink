@@ -8,54 +8,121 @@
 </head>
 <body>
 
-    <!-- Header Sticky CTA -->
+    <!-- ============ HEADER STICKY ============ -->
     <div class="sticky-header">
         <a href="https://wa.me/5551999663200?text=Quero%20Saber%20mais%20Sobre%20o%20HypeDrink" class="btn-cta">🚀 GARANTIR MEU HYPE DRINK</a>
     </div>
     <div class="header-spacer"></div>
 
+    <!-- ============ CONTEÚDO PRINCIPAL ============ -->
     <main class="container">
-        
-        <!-- [NÍVEL A - ATENÇÃO] -->
+
+        <!-- ATENÇÃO -->
         <section class="card">
             <h1>Sua Jornada de Transformação</h1>
-            <p style="margin-bottom: 20px; font-size:16px;">Descubra como otimizar a suaina com nutrição de elite.</p>
+            <p style="margin-bottom:20px;font-size:16px;">Descubra como otimizar a sua rotina com nutrição de elite.</p>
             <img class="img-fluid" src="img/composicaocorporal.jpg" alt="Composição Corporal">
-            <p style="font-size: 13px; font-style: italic;">Imagens representativas de evolução de composição corporal. Os resultados variam de pessoa para pessoa.</p>
+            <p style="font-size:13px;font-style:italic;">Imagens representativas de evolução de composição corporal. Os resultados variam de pessoa para pessoa.</p>
         </section>
 
         <div class="separator-1"></div>
 
-        <!-- [NÍVEL I - INTERESSE] -->
+        <!-- INTERESSE -->
         <section class="card">
             <h2>Ciência a Serviço do Seu Performance</h2>
-            <p style="margin-bottom: 25px;">Utilizamos a liderança global da marca número 1 em controle de peso e bem-estar do mundo para respaldar seus objetivos diários.</p>
+            <p style="margin-bottom:25px;">Utilizamos a liderança global da marca número 1 em controle de peso e bem-estar do mundo para respaldar seus objetivos diários.</p>
             <img class="img-fluid" src="img/laboratorio.jpg" alt="Selo Científico e Controle Analítico">
             <img class="img-fluid" src="img/numeroumdomundo.jpg" alt="Marca numero um do mundo">
         </section>
 
         <div class="separator-2"></div>
 
-        <!-- [NÍVEL D - DESEJO] -->
+        <!-- DESEJO + CARROSSEL -->
         <section class="card">
             <h2>Chancela de Atletas Profissionais</h2>
-            <p style="margin-bottom: 20px;">Parceria de confiança que inspira alta performance mundial diariamente.</p>
+            <p style="margin-bottom:20px;">Parceria de confiança que inspira alta performance mundial diariamente.</p>
             <img class="img-fluid" src="img/cr7_20anos.jpg" alt="Cristiano Ronaldo - 20 Anos de Parceria">
-            
-            <!-- Carrossel de Selos Oficiais -->
-            <h3 style="margin-top: 30px; font-size: 15px;">Certificados e Padrões de Excelência</h3>
-            <div class="selos-carrossel">
-                <a href="#lightbox-selo1"><img src="img/selos/selo1.jpg" alt="Selo 1"></a>
-                <a href="#lightbox-selo12"><img src="img/selos/selo12.jpg" alt="Selo 2"></a>
-                <a href="#lightbox-selo123"><img src="img/selos/selo123.jpg" alt="Selo 3"></a>
-                <a href="#lightbox-selo4"><img src="img/selos/selo4.jpg" alt="Selo 4"></a>
-                <a href="#lightbox-selo45"><img src="img/selos/selo45.jpg" alt="Selo 5"></a>
-                <a href="#lightbox-selo456"><img src="img/selos/selo456.jpg" alt="Selo 6"></a>
-                <a href="#lightbox-selo7"><img src="img/selos/selo7.jpg" alt="Selo 7"></a>
-                <a href="#lightbox-selo78"><img src="img/selos/selo78.jpg" alt="Selo 8"></a>
-                <a href="#lightbox-selo789"><img src="img/selos/selo789.jpg" alt="Selo 9"></a>
-                <a href="#lightbox-selo9"><img src="img/selos/selo9.jpg" alt="Selo 10"></a>
-                <a href="#lightbox-selo91"><img src="img/selos/selo91.jpg" alt="Selo 11"></a>
-                <a href="#lightbox-selo911"><img src="img/selos/selo911.jpg" alt="Selo 12"></a>
-                <a href="#lightbox-selo913"><img src="img/selos/selo913.jpg" alt="Selo 13"></a>
 
+            <h3 style="margin-top:30px;font-size:15px;">Certificados e Padrões de Excelência</h3>
+            <p style="font-size:12px;color:#888;">Toque na miniatura para ampliar</p>
+
+            <div class="selos-carrossel">
+                <img src="img/selos/selo1.jpg" alt="Selo 1" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo12.jpg" alt="Selo 2" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo123.jpg" alt="Selo 3" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo4.jpg" alt="Selo 4" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo45.jpg" alt="Selo 5" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo456.jpg" alt="Selo 6" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo7.jpg" alt="Selo 7" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo78.jpg" alt="Selo 8" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo789.jpg" alt="Selo 9" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo9.jpg" alt="Selo 10" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo91.jpg" alt="Selo 11" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo911.jpg" alt="Selo 12" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo913.jpg" alt="Selo 13" onclick="openLightbox(this.src)">
+                <img src="img/selos/selo914.jpg" alt="Selo 14" onclick="openLightbox(this.src)">
+            </div>
+        </section>
+
+        <div class="separator-3"></div>
+
+        <!-- AÇÃO -->
+        <section class="card" style="border:2px solid var(--primary);">
+            <h2>A Experiência Hype Drink</h2>
+            <p style="margin-bottom:20px;">Refrescância, foco e queima calórica inteligente em um copo portátil de pura nutrição.</p>
+            <img class="img-fluid" src="img/HypeDrink.jpg" alt="Hype Drink Fresh">
+
+            <p><strong>Clique na imagem abaixo</strong> para aprender como preparar a sua receita perfeita em Novo Hamburgo ou qualquer lugar do Brasil:</p>
+            <a href="preparo.html">
+                <img class="img-fluid img-link" src="img/HypeSelo.png" alt="Ver Instruções de Preparo">
+            </a>
+
+            <img class="img-fluid" src="img/HypeVantagens.jpg" alt="Vantagens Hype Drink">
+
+            <a href="https://wa.me/5551999663200?text=Quero%20Saber%20mais%20Sobre%20o%20HypeDrink" class="btn-primary-whats">Saber Mais no WhatsApp</a>
+        </section>
+
+        <!-- CLIENTE PREMIUM -->
+        <section class="card" style="background:#555;color:white;">
+            <h2>Seja um Cliente Premium</h2>
+            <p style="color:#DDD;margin-bottom:20px;">Aproveite os descontos progressivos de até 32% sem cadastros burocráticos ou obrigatoriedades mensais.</p>
+            <a href="cadastro.html" class="btn-secondary">VER VANTAGENS CLIENTE PREMIUM</a>
+        </section>
+
+    </main>
+
+    <!-- ============ RODAPÉ ============ -->
+    <footer>
+        <p style="font-size:14px;margin-bottom:12px;"><strong>Distribuidor Independente Herbalife: Edu Sidegum</strong> — Novo Hamburgo/RS</p>
+        <p>
+            <a href="https://catalogoherbalife.com.br/edusidegum" target="_blank" style="color:#78BE20;font-weight:bold;font-size:15px;text-decoration:none;border-bottom:2px solid rgba(120,190,32,0.4);padding-bottom:2px;">
+                📖 Acesse meu Catálogo Oficial de Produtos
+            </a>
+        </p>
+        <p style="margin-top:16px;font-size:11px;opacity:0.7;max-width:500px;margin-left:auto;margin-right:auto;">Aviso: Atendimento em compliance com as normas Herbalife. Imagens autorizadas e chanceladas para direitos de uso. A entrega grátis em todo o Brasil segue critérios logísticos oficiais.</p>
+    </footer>
+
+    <!-- ============ LIGHTBOX (JavaScript inline, sem dependências) ============ -->
+    <div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:99999;align-items:center;justify-content:center;cursor:pointer;" onclick="closeLightbox()">
+        <span style="position:absolute;top:20px;right:30px;color:#fff;font-size:40px;font-weight:bold;z-index:100000;">&times;</span>
+        <img id="lightbox-img" src="" alt="Selo Ampliado" style="max-width:90vw;max-height:85vh;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+        // Fechar com tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+</body>
+</html>
