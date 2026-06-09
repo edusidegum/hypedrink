@@ -142,23 +142,6 @@ h1, h2, h3 {
 }
 
 /* Carrossel de Selos - Sobral Style (Fluído e Responsivo) */
-.selos-carrossel {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding: 20px 10px;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
-}
-
-.selos-carrossel::-webkit-scrollbar {
-    height: 6px;
-}
-
-.selos-carrossel::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
-    border-radius: 10px;
-}
 
 .selos-carrossel img {
     flex: 0 0 auto;
@@ -166,7 +149,13 @@ h1, h2, h3 {
     width: auto;
     scroll-snap-align: center;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
+.selos-carrossel img:hover {
+    transform: scale(1.08);
+}
+
 
 /* Botões Globais */
 .btn-primary-whats {
