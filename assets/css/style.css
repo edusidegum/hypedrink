@@ -103,12 +103,30 @@ h1, h2, h3 {
     gap: 8px;
 }
 
-/* ── LOGO ── */
-.sticky-header .topbar-logo {
-    height: 32px;
-    width: auto;
+
+/* ── LOGO + TEXTO ── */
+.sticky-header .topbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
     flex-shrink: 0;
 }
+
+.sticky-header .topbar-logo {
+    height: 64px;
+    width: auto;
+}
+
+.sticky-header .topbar-nome {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #78BE20;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
 
 /* ── MENU DROPDOWN ── */
 .menu-dropdown {
