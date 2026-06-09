@@ -78,9 +78,7 @@ h1, h2, h3 {
 /* ═══════════════════════════════════════
    TOPBAR PADRÃO — HERBALIFE (REVISADA)
    ═══════════════════════════════════════ */
-/* ═══════════════════════════════════════
-   TOPBAR PADRÃO — HERBALIFE (REVISADA)
-   ═══════════════════════════════════════ */
+
 
 /* ── TOPBAR FIXA ── */
 .sticky-header {
@@ -111,7 +109,7 @@ h1, h2, h3 {
 }
 
 .sticky-header .topbar-logo {
-    height: 180px;            /* era 128px → aumentado */
+    height: 128px;            /* era 128px → aumentado */
     width: auto;
     max-height: 180px;        /* garante que não estoure */
 }
