@@ -208,6 +208,8 @@ h1, h2, h3 {
     box-shadow: 0 2px 10px rgba(13, 77, 26, 0.4);
     justify-self: end;
     flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
 }
 .sticky-header .btn-cta:hover {
     background: #0a3d14;
