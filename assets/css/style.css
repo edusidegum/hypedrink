@@ -524,3 +524,11 @@ footer p {
         padding: 8px 18px;
     }
 }
+/* Trava layout mesmo com swap de fontes */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+.container {
+    min-height: 80vh;
+}
