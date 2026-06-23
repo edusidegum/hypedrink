@@ -44,8 +44,7 @@ h1, h2, h3 {
     text-transform: uppercase;
     letter-spacing: -0.5px;
 }
-
-/* ===== HEADER STICKY ===== */
+/* ===== HEADER STICKY  - Eliminado Para SpeedPage   
 .sticky-header {
     position: fixed;
     top: 0;
@@ -75,7 +74,10 @@ h1, h2, h3 {
 
 .header-spacer {
     height: 56px;
-}
+}     
+
+===== */
+
 /* ===== CONTAINER PRINCIPAL ===== */
 .container {
     max-width: 900px;
@@ -202,9 +204,9 @@ h1, h2, h3 {
     display: block;
 }
 
-/* ── BOTÃO WHATSAPP ── */
+/* ── BOTÃO WHATSAPP     Duplicado, rmovido para SEO
 .sticky-header .btn-cta {
-    background: #0a3d14;                   /* verde escuro, destaca da barra */
+    background: #0a3d14;                   /* verde escuro, destaca da barra
     color: #fff;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -218,7 +220,7 @@ h1, h2, h3 {
     flex-shrink: 0;
     border: 1px solid rgba(255, 255, 255, 0.25);
 
-}
+}    ── */  
 .sticky-header .btn-cta:hover {
     background: #0a3d14;
 }
