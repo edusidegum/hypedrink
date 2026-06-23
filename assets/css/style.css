@@ -14,12 +14,14 @@ Apagado para evitar reimportacao feita no Head
 
 /* ===== VARIÁVEIS ===== */
 :root {
-    --primary: #78BE20;
-    --primary-glow: #8ae029;
-    --dark: #2D2D2D;
-    --light-bg: #F8F9FA;
-    --white: #FFFFFF;
+ --primary: #78BE20;
+ --primary-glow: #8ae029;
+ --dark: #2D2D2D;
+ --light-bg: #F8F9FA;
+ --white: #FFFFFF;
+ --whatsapp: #25D366;
 }
+
 
 /* ===== RESET ===== */
 * {
