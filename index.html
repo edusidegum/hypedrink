@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://edusidegum.github.io/menu/bloco-includes.js" defer></script>
+    <!-- <script src="https://edusidegum.github.io/menu/bloco-includes.js" defer></script>     --! MOVIDO PARA body>
     <!-- SEO On-Page -->
     <meta name="description" content="Distribuidor Independente Herbalife - RS / BR. Conheça o Hype Drink, nutrição de alta performance com desconto de até 32%. Acompanhamento personalizado e entrega em todo Brasil.">
     <!-- Autor -->
@@ -31,11 +31,11 @@
     <title>Hype Drink — Nutrição de Alta Performance | Distribuidor Herbalife</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"></noscript>  
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"></noscript>  
     <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
 <!-- ✗ REMOVER a linha original abaixo -->
 <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <!-- CSS Crítico Inline (Above the Fold — evita bloqueio de renderização) -->
@@ -119,13 +119,14 @@
     <main class="container" role="main"> 
 
     <!-- ═══ BREADCRUMB ═══ -->
-    <nav aria-label="Breadcrumb" style="font-size:12px;color:#999;margin-bottom:12px;padding:0 4px;">
-        <ol style="list-style:none;display:flex;gap:6px;padding:0;margin:0;">
-            <li><a href="index.html" style="color:#78BE20;text-decoration:none;">Home</a></li>
-            <li style="color:#bbb;">›</li>
-            <li aria-current="page" style="color:#666;">Hype Drink</li>
-        </ol>
-    </nav>
+    <nav aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList" 
+     style="font-size:12px;color:#999;margin-bottom:12px;padding:0 4px;">
+    <ol style="list-style:none;display:flex;gap:6px;padding:0;margin:0;" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <li><a href="index.html" style="color:#78BE20;text-decoration:none;" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
+        <li style="color:#bbb;">›</li>
+        <li aria-current="page" style="color:#666;" itemprop="item" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">Hype Drink</span><meta itemprop="position" content="2"></li>
+    </ol>
+</nav>
 
     <!-- Primeiro card... -->
 
@@ -239,6 +240,13 @@
         <span class="close-btn" aria-label="Fechar imagem ampliada">&times;</span>
         <img id="lightbox-img" src="" alt="Imagem ampliada">
     </div>
+    
+        <!-- Script leve, inline e não-bloqueante -->
+    <script defer src="https://edusidegum.github.io/menu/bloco-includes.js"></script>
+    <script defer>
+        // ... lightbox code ...
+    </script>
+    
     <!-- Script leve, inline e não-bloqueante (executa após DOM carregado) -->
     <script defer>
         /**
