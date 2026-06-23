@@ -5,19 +5,22 @@
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
     <!-- ===== Página Principal ===== -->
-    <url>
-        <loc>https://edusidegum.github.io/hypedrink/</loc>
-        <lastmod>2026-06-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <!-- ===== Instruções de Preparo ===== -->
-    <url>
-        <loc>https://edusidegum.github.io/hypedrink/preparo.html</loc>
-        <lastmod>2026-06-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
+ <url>
+    <loc>https://edusidegum.github.io/hypedrink/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://edusidegum.github.io/hypedrink/preparo.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://edusidegum.github.io/hypedrink/investimento.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
