@@ -298,8 +298,9 @@ h1, h2, h3 {
 
 .selos-carrossel img {
     flex: 0 0 auto;
-    height: 90px;
+    height: 200px;
     width: auto;
+   aspect-ratio: 1 / 1;
     scroll-snap-align: center;
     border-radius: 10px;
     cursor: pointer;
